@@ -7,7 +7,7 @@ function App() {
   const form = useRef()
   const handleSubmit = (e) => {
     e.preventDefault();
-    emailjs.sendForm('service_aov11xg', 'template_gwnjx9d', form.current, '67DjTDyEebmuWjNa0')
+    emailjs.sendForm('service_aov11xg', 'YOUR_SERVICE_KEY', form.current, 'YOUR_PUBLIC_KEY')
     .then((result) => {
       setFeedBack(result.text)
     },
